@@ -49,7 +49,7 @@ Vagrant.configure("2") do |config|
         ansible.vm.network "public_network", ip: "192.168.100.26"
         
         ansible.vm.provision "shell",
-            inline: "cp /vagrant/indbionic /home/vagrant && \
+            inline: "cp /vagrant/id_bionic /home/vagrant && \
                      chmod 600 /home/vagrant/id_bionic && \
                      chown vagrant:vagrant /home/vagrant/id_bionic"
                 
